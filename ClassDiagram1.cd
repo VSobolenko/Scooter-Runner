@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ADS" Collapsed="true">
+    <Position X="8.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\ADS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameMenuController" Collapsed="true">
+    <Position X="8.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAECAQAAQAAAAAAAIgEAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\GameMenuController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MenuController" Collapsed="true">
+    <Position X="8.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAEAABgAAAEAAAABAAAgAAAAAAAIABAEA=</HashCode>
+      <FileName>Assets\Scripts\UI\MenuController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LoadScene" Collapsed="true">
+    <Position X="8.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQACAACAAAAAIAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\LoadScene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Person" Collapsed="true">
+    <Position X="8.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Block" Collapsed="true">
+    <Position X="5.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Block.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaunerBlock" Collapsed="true">
+    <Position X="5.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUAAAAAACAAAQEAAAAAAAAQAQABAwAAAEAAAAAAACA=</HashCode>
+      <FileName>Assets\SpaunerBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="IMenuController" Collapsed="true">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAABAAAAEAAAABAAAAAAAAAAAAABAEA=</HashCode>
+      <FileName>Assets\Scripts\IScripts\IMenuController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

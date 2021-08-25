@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 658c61472acbe844d9abb4da9623a87a, type: 3}
+    - {fileID: 2800000, guid: 48e632040d58ce549a16abd283296e6b, type: 3}
+    - {fileID: 2800000, guid: 598f9315368432f459eee36aa5b19d37, type: 3}
+    - {fileID: 2800000, guid: afc98cc06f7c5a341bb0511d41c0231a, type: 3}
+    - {fileID: 2800000, guid: 80e7ce0853435b548b8605b5db9617f7, type: 3}
+    - {fileID: 2800000, guid: dc67e3a69789c6f4b8b8a45b2b0c4f73, type: 3}
+    - {fileID: 2800000, guid: 58f3b35b7e886c54e9b9b563fd1fd264, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: afc98cc06f7c5a341bb0511d41c0231a, type: 3}
+  - {fileID: 21300000, guid: 48e632040d58ce549a16abd283296e6b, type: 3}
+  - {fileID: 21300000, guid: 598f9315368432f459eee36aa5b19d37, type: 3}
+  - {fileID: 21300000, guid: dc67e3a69789c6f4b8b8a45b2b0c4f73, type: 3}
+  - {fileID: 21300000, guid: 658c61472acbe844d9abb4da9623a87a, type: 3}
+  - {fileID: 21300000, guid: 80e7ce0853435b548b8605b5db9617f7, type: 3}
+  - {fileID: 21300000, guid: 58f3b35b7e886c54e9b9b563fd1fd264, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - LoadCircle_3
+  - LoadCircle_1
+  - LoadCircle_2
+  - O4YIQH0
+  - Background
+  - LoadCircle_4
+  - pngwing.com
+  m_Tag: UI
+  m_IsVariant: 0

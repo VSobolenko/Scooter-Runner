@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TexturesForest
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 1024
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 4bb20438c53fcc54fa8e2caf26ef4536, type: 3}
+    - {fileID: 2800000, guid: abb17000484094b43a160200a2b83b13, type: 3}
+    - {fileID: 2800000, guid: efced9b0d548d3443890234e069dd54f, type: 3}
+    - {fileID: 2800000, guid: 27a66f735b637f74ab821d66dc8d254e, type: 3}
+    - {fileID: 2800000, guid: d7237943de239bd4aa9f174cd6ea4023, type: 3}
+    - {fileID: 2800000, guid: 3ef24788168190d4e90433a3d5ad99f4, type: 3}
+    - {fileID: 2800000, guid: dae3c951d80ef9e40aa5d305c912c910, type: 3}
+    - {fileID: 2800000, guid: 383fb41175e169549997ed52cc37736a, type: 3}
+    - {fileID: 2800000, guid: df2f17dc5ef61e841afa515327e65955, type: 3}
+    - {fileID: 2800000, guid: 24706b8b9af1f014d8e2c45410f04ee8, type: 3}
+    - {fileID: 2800000, guid: 6b6bbec7065227e41bc651f3ed0da416, type: 3}
+    - {fileID: 2800000, guid: 3cd359015f9e4584c907cc95b4b60452, type: 3}
+    - {fileID: 2800000, guid: 747725117fca38044af55fceaa49d076, type: 3}
+    - {fileID: 2800000, guid: 014fbf19a405c5d42b2cfb16ff47a8f9, type: 3}
+    - {fileID: 2800000, guid: 263a1874170fa9a499819af6a1845d97, type: 3}
+    - {fileID: 2800000, guid: e702e3fa4eb13d64fab8b82802d263ac, type: 3}
+    - {fileID: 2800000, guid: e36f858543d9f8e4aaf7514cb60cf7d7, type: 3}
+    - {fileID: 2800000, guid: 7674e5091a4209f48baf282acddd5fa3, type: 3}
+    - {fileID: 2800000, guid: 908ee11f9548ef446b2cd6a09eb52b1c, type: 3}
+    - {fileID: 2800000, guid: afacabc13014ae94c819c34f730b8856, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites: []
+  m_PackedSpriteNamesToIndex: []
+  m_Tag: TexturesForest
+  m_IsVariant: 0

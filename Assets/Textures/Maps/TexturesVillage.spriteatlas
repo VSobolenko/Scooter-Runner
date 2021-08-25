@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TexturesVillage
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 1024
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: f2610db31d7e57442ae6f46d75a9bb09, type: 3}
+    - {fileID: 2800000, guid: 5e62eef124c32134d9f8915fa7cd2467, type: 3}
+    - {fileID: 2800000, guid: 69d694ea0c472524190f6308cbdd3d73, type: 3}
+    - {fileID: 2800000, guid: dead4d37d7675164d87cb76952d82485, type: 3}
+    - {fileID: 2800000, guid: b415a8754699e6642b014edd88cadfff, type: 3}
+    - {fileID: 2800000, guid: 82579a1a83fbc1c478f2718e9553cfeb, type: 3}
+    - {fileID: 2800000, guid: d0199126636d6b2478cb624c5b3fa11d, type: 3}
+    - {fileID: 2800000, guid: dcbdac1cca81a584b91db581448818da, type: 3}
+    - {fileID: 2800000, guid: 85f9f12ef96c56a418d78874c82afc24, type: 3}
+    - {fileID: 2800000, guid: 3cd359015f9e4584c907cc95b4b60452, type: 3}
+    - {fileID: 2800000, guid: 747725117fca38044af55fceaa49d076, type: 3}
+    - {fileID: 2800000, guid: 014fbf19a405c5d42b2cfb16ff47a8f9, type: 3}
+    - {fileID: 2800000, guid: 263a1874170fa9a499819af6a1845d97, type: 3}
+    - {fileID: 2800000, guid: e702e3fa4eb13d64fab8b82802d263ac, type: 3}
+    - {fileID: 2800000, guid: e36f858543d9f8e4aaf7514cb60cf7d7, type: 3}
+    - {fileID: 2800000, guid: 7674e5091a4209f48baf282acddd5fa3, type: 3}
+    - {fileID: 2800000, guid: 908ee11f9548ef446b2cd6a09eb52b1c, type: 3}
+    - {fileID: 2800000, guid: afacabc13014ae94c819c34f730b8856, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites: []
+  m_PackedSpriteNamesToIndex: []
+  m_Tag: TexturesVillage
+  m_IsVariant: 0
