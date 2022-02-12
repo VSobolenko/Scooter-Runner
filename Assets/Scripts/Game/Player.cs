@@ -34,15 +34,20 @@ class Player : MonoBehaviour//, IPlayer
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision.collider == null)
+        {
+            return;
+        }
+        
         if (collision.collider.tag == "Block")
         {
             Time.timeScale = 0f;
             menuControllerPlayer.ShowRestartGameMenu();
             temping++;
             Instantiate(OnDestroyParticle, new Vector3(transform.position.x, transform.position.y + 1.5f, transform.position.z + 1.2f), Quaternion.identity);
-            Debug.LogWarning(temping);
+            //Debug.LogWarning(temping);
             MMVibrationManager.Haptic(HapticTypes.HeavyImpact);
-            AnalyticsController.FinishLevel(SceneManager.GetActiveScene().name.Substring(2), timer, skull);
+            AnalyticsController.FinishLevel(SceneManager.GetActiveScene().name.Substring(2), (int)timer, skull);
         }
     }
 

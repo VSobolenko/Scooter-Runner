@@ -49,7 +49,7 @@ public class ADS : MonoBehaviour
 
     private void Update()
     {
-        if (Player.temping >= 6)
+        if (Player.temping >= 4)
         {
             GoADS2();
             Player.temping = 0;

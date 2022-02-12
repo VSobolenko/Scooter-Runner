@@ -26,9 +26,9 @@ MonoBehaviour:
   UserMessagesFailed: 0
   CustomArea: 
   gameKey:
-  - 73b84ac835d8ec377b0770787d358664
+  - c24973a469e19c11847dca09c961c514
   secretKey:
-  - bcf6ca5c9f44c6a7ea2920bac8d0e355bdaff814
+  - 86acbe73c1a81a72e011521bceb4e6cbd726b32f
   Build:
   - 0.1
   SelectedPlatformOrganization:
@@ -37,10 +37,10 @@ MonoBehaviour:
   - Gexetr
   SelectedPlatformGame:
   - Scooter Runner
-  SelectedPlatformGameID: 74d50200
+  SelectedPlatformGameID: 3fd50200
   SelectedOrganization: 01000000
   SelectedStudio: 01000000
-  SelectedGame: 01000000
+  SelectedGame: 02000000
   NewVersion: 
   Changes: 
   SignUpOpen: 0
