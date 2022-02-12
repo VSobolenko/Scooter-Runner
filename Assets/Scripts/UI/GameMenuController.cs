@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -63,21 +64,10 @@ public class GameMenuController : MonoBehaviour, IGameMenuController
 
     public void ShowRestartGameMenu()
     {
-        //var ter = PlayerPrefs.GetFloat("Record", 0);
-        //if (player.timer >= _prevMaxScore)
-        //{
-        //    maxScore = player.timer;
-        //    PlayerPrefs.SetFloat("Record", maxScore);
-        //    _textMaxScoreOrCrashed.text = "New Record !";
-        //}
-        //else
-        //{
-        //    _textMaxScoreOrCrashed.text = "You crashed :(";
-        //}
-
         Time.timeScale = 0f;
         _bottonPause.SetActive(false);
-        _panelRestartGame.SetActive(true);
+        //_panelRestartGame.SetActive(true);
+        StartCoroutine(ShowRestartMenu());
         _scoreGame.color = _colorForStop;
         _scoreSkull.color = _colorForStop;
         _scoreRestart.text = "Score: " + _nowScore;
@@ -85,7 +75,12 @@ public class GameMenuController : MonoBehaviour, IGameMenuController
 
     }
 
-    //Тот самый метод, который показывает меню когда игрок проиграл, а не нажал на паузу
+    private IEnumerator ShowRestartMenu()
+    {
+        yield return new WaitForSecondsRealtime(1f);
+        _panelRestartGame.SetActive(true);
+    }
+    
     public void ResumeGame()
     {
         Time.timeScale = 1f;
@@ -98,14 +93,13 @@ public class GameMenuController : MonoBehaviour, IGameMenuController
     public void RestartGame()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
     }
 
-    //Его вызывает игрок обиделся и решил пойти в меню
     public void GoToMainMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("MenuScene");
+        SceneManager.LoadSceneAsync("MenuScene");
     }
 
     private void Update()

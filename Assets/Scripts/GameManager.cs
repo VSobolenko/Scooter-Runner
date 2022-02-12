@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using Analytics;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// О велий и могуйчий GameManager
@@ -17,27 +19,18 @@ class GameManager : MonoBehaviour
     public float startSpeed = 3f;
     public float stepForSpeed = 0.5f;
     public Vector3 startSpawn = new Vector3(0, 0.428f, 30);
-
-    //[Header("Spauner")]
-    public SpawnerSettings main;
-
+    
     [Header("UI")]
     public GameMenuController menuControllerUI;
 
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        AnalyticsController.StartLevel(SceneManager.GetActiveScene().name.Substring(2), PlayerPrefs.GetInt("Skull"));
 
         SpawnerSettings.startSpawn = startSpawn;
         SpawnerSettings.speed = startSpeed;
         SpawnerSettings.stepForSpeed = stepForSpeed;
-
-        /*
-        SpaunerBlock.instance.speed = startSpeedBlock;
-        SpaunerBlock.instance.stepForSpeed = stepForSpeed;
-        SpaunerBlock.instance.objectForSpaun = block;
-        SpaunerBlock.instance.startSpawn = startSpaunBlock;
-        */
 
         player.menuControllerPlayer = menuControllerUI;
         player.speed = speedPerson;
@@ -48,14 +41,5 @@ class GameManager : MonoBehaviour
         playerMoving.leftZone = leftZoneX;
         playerMoving.rihgtZone = rightZoneX;
         playerMoving.speed = speedPerson;
-
-        /*
-        Player.instance.menuControllerPlayer = menuControllerUI;
-        Player.instance.speed = speedPerson;
-        Player.instance.rihgtZone = rightZoneX;
-        Player.instance.leftZone = leftZoneX;
-        */
-
-        Debug.unityLogger.logEnabled = false;
     }
 }

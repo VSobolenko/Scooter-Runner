@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections;
+using Analytics;
+using MoreMountains.NiceVibrations;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Считаю его великим после GameManager
@@ -8,6 +11,7 @@ using UnityEngine;
 
 class Player : MonoBehaviour//, IPlayer
 {
+    public ParticleSystem OnDestroyParticle;
     public new GameObject particleSystem;
 
     //public static Player instance;
@@ -33,10 +37,12 @@ class Player : MonoBehaviour//, IPlayer
         if (collision.collider.tag == "Block")
         {
             Time.timeScale = 0f;
-            menuControllerPlayer = menuControllerPlayer.GetComponent<GameMenuController>();
             menuControllerPlayer.ShowRestartGameMenu();
             temping++;
+            Instantiate(OnDestroyParticle, new Vector3(transform.position.x, transform.position.y + 1.5f, transform.position.z + 1.2f), Quaternion.identity);
             Debug.LogWarning(temping);
+            MMVibrationManager.Haptic(HapticTypes.HeavyImpact);
+            AnalyticsController.FinishLevel(SceneManager.GetActiveScene().name.Substring(2), timer, skull);
         }
     }
 
@@ -65,7 +71,7 @@ class Player : MonoBehaviour//, IPlayer
             skull++;
             Debug.Log("Skull: " + skull);
             Destroy(Instantiate(particleSystem, other.gameObject.transform.position, transform.rotation), 2f);
-            //particleSystem.Play();
+            MMVibrationManager.Haptic(HapticTypes.MediumImpact);
             Destroy(other.gameObject);
         }
     }

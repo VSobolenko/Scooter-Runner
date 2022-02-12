@@ -8,7 +8,6 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour, IMenuController
 {
-    // Кнопки меню
     [SerializeField] private GameObject _mainMenu;
     [SerializeField] private GameObject _settings;
     [SerializeField] private GameObject _information;
@@ -17,14 +16,11 @@ public class MenuController : MonoBehaviour, IMenuController
     [SerializeField] private GameObject _bestScore;
     [SerializeField] private GameObject _scoreSkull;
 
-    //Метод запуска игры (сейчас это index +1)
     public void PlayGame()
     {
-        Debug.Log("Star game");
-        SceneManager.LoadScene("SelectMap");
+        SceneManager.LoadSceneAsync("SelectMap");
     }
 
-    //Метод показа главного меню (вот прям самое главное)
     public void ShowMenu()
     {
         _mainMenu.SetActive(true);
@@ -36,7 +32,6 @@ public class MenuController : MonoBehaviour, IMenuController
         _exit.SetActive(false);
     }
 
-    //Метод показа меню настроек
     public void ShowSettings()
     {
         _settings.SetActive(true);
@@ -48,7 +43,6 @@ public class MenuController : MonoBehaviour, IMenuController
         _mainMenu.SetActive(false);
     }
 
-    //Метод показа меню информации
     public void ShowInformation()
     {
         _information.SetActive(true);
@@ -60,7 +54,6 @@ public class MenuController : MonoBehaviour, IMenuController
         _exit.SetActive(false);
     }
 
-    //Перед выходом, может,  игрок и передумает ещё...
     public void ShowQuitGame()
     {
         _exit.SetActive(true);
@@ -72,7 +65,6 @@ public class MenuController : MonoBehaviour, IMenuController
         _settings.SetActive(false);
     }
 
-    //Ну и пускай уходит, я не очень расстроился
     public void ExitGame()
     {
         Debug.Log("Exit Game");

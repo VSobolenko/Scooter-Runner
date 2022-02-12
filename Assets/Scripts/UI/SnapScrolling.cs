@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using Analytics;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -194,7 +195,7 @@ public class SnapScrolling : MonoBehaviour
 
             Destroy(buttonLoad.transform.GetChild(0).gameObject);
             PlayerPrefs.SetInt(nameSave, 1);
-
+            AnalyticsController.ByNewLevel(nameSave.Substring(3), cost, _skull);
         }
         else
         {

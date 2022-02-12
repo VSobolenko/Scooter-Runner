@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Analytics;
+using UnityEngine;
 using UnityEngine.Advertisements;
 
 public class ADS : MonoBehaviour
@@ -24,7 +25,6 @@ public class ADS : MonoBehaviour
         else
         {
             Debug.Log("isReady");
-
         }
     }
 
@@ -43,8 +43,8 @@ public class ADS : MonoBehaviour
 
     public void OpenUrl(string url)
     {
+        AnalyticsController.OpenDiscord();
         Application.OpenURL(url);
-        //Debug.Log("OPEN URL");
     }
 
     private void Update()
